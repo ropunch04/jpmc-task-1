@@ -65,4 +65,5 @@ if __name__ == "__main__":
                 % (stock, bid_price, ask_price, price)
             )
 
-        print("Ratio %s" % getRatio(prices["ABC"], prices["DEF"]))
+        stock_list = list(prices.keys())
+        print("Ratio %s" % getRatio(prices[stock_list[0]], prices[stock_list[1]]))
